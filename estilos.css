@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    background-color: aqua;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border: 1px solid #ddd;
+    background-color: yellow;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    
+}
+
+.imagen {
+
+    flex-shrink: 0; /* Evitar que la imagen se encoja */
+    width: 100%;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tu código CSS actual */
+/* ... */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 15px;
+    
+}
+.alineado{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.bi-info-circle {
+    font-size: 24px;
+    padding-left: 2.5rem;
+
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.buy{
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button i {
+    margin-right: 5px;
+}
