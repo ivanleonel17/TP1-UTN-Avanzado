@@ -1,86 +1,120 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&family=Noto+Sans+Multani&display=swap');
+*{
+    margin:0;
+    padding:0;
 }
 
-body {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body{
+    background-color:#E7EDED;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    background-color: aqua;
+button{
+    font-family: 'Noto Sans Multani', sans-serif;
+    border:2px solid transparent;
+    background-color:transparent;
+    cursor:pointer;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    border: 1px solid #ddd;
-    background-color: yellow;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    
+.botvarios button{
+    border-radius:0.5rem;
+    margin: 0 0.4em;
+    font-size:1rem;
+    box-shadow:0 0 5px lightgrey;
 }
 
-.imagen {
-
-    flex-shrink: 0; /* Evitar que la imagen se encoja */
-    width: 100%;
+.productImages:hover{
+    opacity:100%;
 }
 
-.imagen img {
-    max-width: 100%;
-    height: auto;
+.bi-info-circle:hover{
+    color:black;
 }
 
-/* Tu código CSS actual */
-/* ... */
-
-.text {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    margin-top: 15px;
-    
-}
-.alineado{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
+.buy:hover{
+    background-color: #046bc0;
 }
 
-.bi-info-circle {
-    font-size: 24px;
-    padding-left: 2.5rem;
-
+.plus:hover{
+    box-shadow:0 0 12px lightgrey;
 }
 
-.botones {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    justify-content: space-around;
+.card{
+    position:relative;
+    width:21em;
+    margin:1em auto 0 auto;
+    background-color:white;
+    padding: 0.5em 0.5em 1em 0.5em;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.imagen{
+    width:21em;
+}
+
+.Name{
+    font-family: 'Noto Sans Chorasmian', sans-serif;
+    font-weight:900;
+}
+
+.Title, .productImages{
+    font-family: 'Noto Sans Multani', sans-serif;
+}
+
+.Title{
+    color:rgb(150, 150, 150);
+    font-size:1.1rem;
+}
+
+.productImages{
+    background-color:grey;
+    color:white;
+    padding:0.2em 0.4em;
+    border-radius:0.5rem;
+    cursor:pointer;
+    opacity:40%;
+    position:absolute;
+    top:52%;
+    right:3%;
+    transition:opacity 0.5s;
+}
+
+.bi-images{
+    padding-left:0.3em;
+}
+
+.info{
+    padding-top:1em;
+    display:flex;
+    justify-content:space-between;
+}
+
+.description{
+    padding-left:0.5em;
+}
+
+.bi-info-circle{
+    font-size:1.5rem;
+    padding-right:0.5em;
+    color:#1D95FF;
+    cursor:pointer;
+    transition:color 0.5s;
+}
+
+.botvarios{
+    padding-top:1em;
 }
 
 .buy{
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color:#0087FF;
+    color:white;
+    padding: 0.8em 1.8em;
+    transition: background-color 0.5s;
 }
 
-button i {
-    margin-right: 5px;
+.iconos{
+    padding: 0.8em;
+    border:1px solid lightgrey;
+    color:grey;
+    transition: box-shadow 0.5s;
 }
