@@ -118,3 +118,49 @@ button{
     color:grey;
     transition: box-shadow 0.5s;
 }
+
+
+@media (max-width: 768px) {
+    
+    .card {
+        width: 80%; 
+        margin: 1em auto;
+    }
+
+    .imagen {
+        width: 100%; 
+    }
+
+    .productImages {
+        opacity: 100%; 
+        position: relative;
+        top: initial;
+        right: initial;
+    }
+
+    .info {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .description {
+        text-align: center; 
+        padding-left: 0; 
+        padding-top: 1em;
+    }
+
+    .botvarios {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .buy {
+        width: 100%; 
+        margin-top: 1em;
+    }
+
+    .iconos {
+        width: 100%; 
+        margin-top: 0.5em;
+    }
+}
